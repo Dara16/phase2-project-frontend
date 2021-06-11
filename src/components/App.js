@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Header from "./Header";
+/*import Header from "./Header";*/
 import BookContainer from "./BookContainer";
 import Form from "./Form";
 
@@ -10,9 +10,9 @@ function App() {
   const[books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/books")
-    .then ((r) => r.json)
-    .then(setBooks);
+    fetch("https://phase2-project-json-server.herokuapp.com/books")
+    .then ((r) => r.json())
+    .then(rBooks => setBooks(rBooks));
   })
 
   function handleAddBook(newBook) {
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-    <Header />
+    {/*<Header /> */}
     <Form onAddBook={handleAddBook} />
     {/*<div className="buttonContainer">
       <button onClick={handleClick}>Donate a book</button>

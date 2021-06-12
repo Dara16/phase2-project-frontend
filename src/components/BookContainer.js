@@ -2,12 +2,12 @@ import React from "react";
 import BookCard from "./BookCard";
 
 
-function BookContainer({ books, onGetBook, onUpdateBook }) {
+function BookContainer({ books, onAddToCart, onUpdateBook }) {
     const bookCards = books.map((book) => (
       <BookCard
         key={book.id}
         book={book}
-        onGetBook={onGetBook}
+        onAddToCart={onAddToCart}
         onUpdateBook={onUpdateBook}
         />
     ));
@@ -15,7 +15,7 @@ function BookContainer({ books, onGetBook, onUpdateBook }) {
     return (
     
     <div id="available-books">
-      <h2>Available Books</h2>
+      <h2 className= "text-center">Available Books</h2>
       {bookCards}</div>
     );
 }

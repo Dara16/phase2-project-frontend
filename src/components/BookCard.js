@@ -30,16 +30,18 @@ function BookCard({ book, onAddToCart, onUpdateBook }) {
     }
 
     return (
-        <div className="card">
+        <div className="text-center">
             <h3>{title}</h3>
             <h4>{author}</h4>
             <p>{likes}</p>
-            <button className="like-btn" onClick={handleLikeClick}>
-                Like ♥
-            </button>
-            <button className="getbook-btn" onClick={handleAddToCartClick}>
-                Add to Cart
-            </button>
+            <div>
+                <button className="btn btn-primary" onClick={handleLikeClick}>
+                    Like ♥
+                </button>
+                <button className="btn btn-primary" onClick={handleAddToCartClick}>
+                    Add to Cart
+                </button>
+            </div>
         </div>
     );
 }

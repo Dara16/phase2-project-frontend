@@ -4,7 +4,7 @@ function BookCard({ book, onGetBook, onUpdateBook }) {
     const { id, title, author, likes } = book;
 
     function handleGetBookClick() {
-        fetch(`https://phase2-project-json-server.herokuapp.com${id}`, {
+        fetch(`https://phase2-project-json-server.herokuapp.com/books/${id}`, {
             method:"DELETE",
         })
         .then((r) => r.json())

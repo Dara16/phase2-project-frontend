@@ -36,13 +36,11 @@ function App() {
     <>
     {/*<Header /> */}
     <Form onAddBook={handleAddBook} />
-    {/*<div className="buttonContainer">
-      <button onClick={handleClick}>Donate a book</button>
-  </div>*/}
     <BookContainer
       books={books}
       onDeleteBook={handleGetBook}
       onUpdateBook={handleUpdateBook}
+      onGetBook={handleGetBook}
     />
     </>
   );

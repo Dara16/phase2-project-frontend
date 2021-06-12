@@ -38,18 +38,18 @@ function Form({onAddBook}) {
             <h3>Donate a book</h3>
             <input
             type="text"
-            name="name"
+            name="title"
             onChange={handleChange}
-            value={formData.name}
+            value={formData.title}
             placeholder="Enter a book title..."
             className="input-text"
             />
             <br />
             <input
             type="text"
-            name="image"
+            name="author"
             onChange={handleChange}
-            value={formData.image}
+            value={formData.author}
             placeholder="Enter author's name..."
             className="input-text"
             />

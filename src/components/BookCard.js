@@ -31,7 +31,7 @@ function BookCard({ book, onGetBook, onUpdateBook }) {
 
     return (
         <div className="card">
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <h4>{author}</h4>
             <p>{likes}</p>
             <button className="like-btn" onClick={handleLikeClick}>

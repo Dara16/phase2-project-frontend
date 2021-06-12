@@ -1,5 +1,6 @@
 import React from "react";
-import BookCard from "./BookCard"
+import BookCard from "./BookCard";
+
 
 function BookContainer({ books, onGetBook, onUpdateBook }) {
     const bookCards = books.map((book) => (
@@ -11,7 +12,12 @@ function BookContainer({ books, onGetBook, onUpdateBook }) {
         />
     ));
 
-    return <div id="book-collection">{bookCards}</div>;
+    return (
+    
+    <div id="book-collection">
+      <h2>Available Books</h2>
+      {bookCards}</div>
+    );
 }
 
 export default BookContainer;

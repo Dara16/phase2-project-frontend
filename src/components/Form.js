@@ -35,7 +35,7 @@ function Form({onAddBook}) {
     return (
         <div className="container">
         <form onSubmit={handleSubmit} className="add-book-form">
-            <h3>Donate a book</h3>
+            <h2>Donate a book</h2>
             <input
             type="text"
             name="title"

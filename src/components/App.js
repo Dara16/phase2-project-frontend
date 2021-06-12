@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-/*import Header from "./Header";*/
+import Header from "./Header";
 import BookContainer from "./BookContainer";
 import Form from "./Form";
 
-import '../App.css';
 
 function App() {
   const[books, setBooks] = useState([]);
@@ -34,14 +33,14 @@ function App() {
 
   return (
     <>
-    {/*<Header /> */}
-    <Form onAddBook={handleAddBook} />
-    <BookContainer
+      <Header />
+      <Form onAddBook={handleAddBook} />
+      <BookContainer
       books={books}
       onDeleteBook={handleGetBook}
       onUpdateBook={handleUpdateBook}
       onGetBook={handleGetBook}
-    />
+      />
     </>
   );
 

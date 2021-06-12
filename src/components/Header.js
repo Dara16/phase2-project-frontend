@@ -4,7 +4,7 @@ function Header() {
   return (
     <div id="booksharer-header">
       
-      <h1>SHARE-A-BOOK</h1>
+      <h1 className= "text-center">SHARE-A-BOOK</h1>
     </div>
   );
 }

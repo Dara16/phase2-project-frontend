@@ -14,7 +14,7 @@ function BookContainer({ books, onGetBook, onUpdateBook }) {
 
     return (
     
-    <div id="book-collection">
+    <div id="available-books">
       <h2>Available Books</h2>
       {bookCards}</div>
     );

@@ -18,7 +18,7 @@ function App() {
     setBooks([...books, newBook]);
   }
 
-  function handleGetBook(bookToDelete) {
+  function handleAddToCart(bookToDelete) {
     const updatedBooks = books.filter((book) => book.id !== bookToDelete.id);
     setBooks(updatedBooks);
   }
@@ -37,9 +37,9 @@ function App() {
       <Form onAddBook={handleAddBook} />
       <BookContainer
       books={books}
-      onDeleteBook={handleGetBook}
+      
       onUpdateBook={handleUpdateBook}
-      onGetBook={handleGetBook}
+      onAddToCart={handleAddToCart}
       />
     </>
   );

@@ -1,15 +1,15 @@
 import React from "react";
 
-function BookCard({ book, onGetBook, onUpdateBook }) {
+function BookCard({ book, onAddToCart, onUpdateBook }) {
     const { id, title, author, likes } = book;
 
-    function handleGetBookClick() {
+    function handleAddToCartClick() {
         fetch(`https://phase2-project-json-server.herokuapp.com/books/${id}`, {
             method:"DELETE",
         })
         .then((r) => r.json())
         .then(() => {
-            onGetBook(book);
+            onAddToCart(book);
         });
     }
 
@@ -37,7 +37,7 @@ function BookCard({ book, onGetBook, onUpdateBook }) {
             <button className="like-btn" onClick={handleLikeClick}>
                 Like ♥
             </button>
-            <button className="getbook-btn" onClick={handleGetBookClick}>
+            <button className="getbook-btn" onClick={handleAddToCartClick}>
                 Add to Cart
             </button>
         </div>

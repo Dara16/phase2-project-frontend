@@ -12,7 +12,7 @@ function App() {
     fetch("https://phase2-project-json-server.herokuapp.com/books")
     .then ((r) => r.json())
     .then(rBooks => setBooks(rBooks));
-  })
+  } , [] )
 
   function handleAddBook(newBook) {
     setBooks([...books, newBook]);
@@ -32,7 +32,7 @@ function App() {
 
 
   return (
-    <>
+    <div className= "app-container">
       <Header />
       <Form onAddBook={handleAddBook} />
       <BookContainer
@@ -41,7 +41,7 @@ function App() {
       onUpdateBook={handleUpdateBook}
       onAddToCart={handleAddToCart}
       />
-    </>
+    </div>
   );
 
   

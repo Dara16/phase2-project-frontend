@@ -9,7 +9,7 @@ function App() {
   const[books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch("https://phase2-project-json-server.herokuapp.com/books")
+    fetch("https://young-cove-58371.herokuapp.com/books")
     .then ((r) => r.json())
     .then(rBooks => setBooks(rBooks));
   } , [] )

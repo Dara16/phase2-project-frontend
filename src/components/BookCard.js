@@ -1,10 +1,10 @@
 import React from "react";
 
 function BookCard({ book, onAddToCart, onUpdateBook }) {
-    const { id, title, author, likes } = book;
+    const { id, title, image, author, likes } = book;
 
     function handleAddToCartClick() {
-        fetch(`https://phase2-project-json-server.herokuapp.com/books/${id}`, {
+        fetch(`https://young-cove-58371.herokuapp.com/books/${id}`, {
             method:"DELETE",
         })
         .then((r) => r.json())
@@ -18,7 +18,7 @@ function BookCard({ book, onAddToCart, onUpdateBook }) {
             likes: book.likes + 1,
         };
 
-        fetch(`https://phase2-project-json-server.herokuapp.com/books/${id}`, {
+        fetch(`https://young-cove-58371.herokuapp.com/books/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -33,6 +33,7 @@ function BookCard({ book, onAddToCart, onUpdateBook }) {
         <div className="text-center">
             <h3>{title}</h3>
             <h4>{author}</h4>
+            <img src={image} width="250" height="350" alt=""/>
             <p>{likes}</p>
             <div>
                 <button className="btn btn-primary" onClick={handleLikeClick}>

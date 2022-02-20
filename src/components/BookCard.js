@@ -9,7 +9,7 @@ function BookCard({ book, onAddToCart, onUpdateBook }) {
         })
         .then((r) => r.json())
         .then(() => {
-            onAddToCart(book);
+           onAddToCart(book);
         });
     }
 
@@ -39,8 +39,7 @@ function BookCard({ book, onAddToCart, onUpdateBook }) {
                 <button class="btn btn-primary" type="button" onClick={handleLikeClick}>
                     Like ♥
                 </button>
-                <button class="btn btn-primary" type="button" // onClick={handleAddToCartClick}
-                > 
+                <button class="btn btn-primary" type="button" onClick={handleAddToCartClick}> 
                     Add to Cart
                 </button>
             </div>

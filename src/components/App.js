@@ -34,13 +34,16 @@ function App() {
   return (
     <div className= "app-container">
       <Header />
-      <Form onAddBook={handleAddBook} />
-      <BookContainer
-      books={books}
-      
-      onUpdateBook={handleUpdateBook}
-      onAddToCart={handleAddToCart}
-      />
+      <div className="container-fluid">
+        <div className="row">
+          <Form onAddBook={handleAddBook} />
+          <BookContainer
+          books={books}      
+          onUpdateBook={handleUpdateBook}
+          onAddToCart={handleAddToCart}
+          />
+        </div>
+      </div>
     </div>
   );
 

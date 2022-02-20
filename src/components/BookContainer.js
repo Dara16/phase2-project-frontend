@@ -14,9 +14,14 @@ function BookContainer({ books, onAddToCart, onUpdateBook }) {
 
     return (
     
-    <div className="available-books">
+    <div className="block col-2">
+
+      <div class="container">
       <h2 className= "text-center">Available Books</h2>
-      {bookCards}
+        <div class="row">
+            {bookCards}
+        </div>         
+      </div>
     </div>
     );
 }

@@ -66,7 +66,7 @@ function Form({onAddBook}) {
             <br />
             <input
             type="submit"
-            className="submit"
+            name="submit"
             value="Donate"
             className="submit"
             />

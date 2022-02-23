@@ -48,15 +48,22 @@ body {
   min-width: 250px;
 }
 
-.book-form{
+.book-form {
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  margin-top: 90px;
+  align-items: stretch;  
+  margin-top: 105px;
+  width: 100%;
+}
+
+input[type=text]:focus {
+  background-color: rgb(229, 226, 226);
 }
 
 .book-form .submit{
   margin-top: 5px;
+  align-self: center;
+  width: min-content;
 }
 
 .book-form h3{
@@ -88,7 +95,7 @@ body {
 }
 
 .card h3{
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 25px;
 }
 

@@ -6,7 +6,7 @@ function Header() {
     <div className="header">    
       <div className="header-inner">
         <img src={image} width="200" height="200" alt="" />
-        <div className= "text-center">
+        <div className= "header-text">
           <h1>SHARE-A-BOOK</h1>
           <p>Give a book or take one...</p>
         </div>

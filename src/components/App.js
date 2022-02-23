@@ -32,17 +32,15 @@ function App() {
 
 
   return (
-    <div className= "app-container">
+    <div className="app-container">
       <Header />
-      <div className="container-fluid">
-        <div className="row">
-          <Form onAddBook={handleAddBook} />
+      <div className="container">
+          <Form onAddBook={handleAddBook} /> 
           <BookContainer
           books={books}      
           onUpdateBook={handleUpdateBook}
           onAddToCart={handleAddToCart}
           />
-        </div>
       </div>
     </div>
   );

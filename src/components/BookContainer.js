@@ -15,7 +15,7 @@ function BookContainer({ books, onAddToCart, onUpdateBook }) {
     return (
     
     <div className="block col-2">
-      <h2 className= "book-header">Available Books</h2>
+      <h1 id="book-header">Available Books</h1>
         <div className="row">
             {bookCards}
         </div>         

@@ -116,7 +116,7 @@ input[type=text]:focus {
 
 .card button {
   margin-right: 5px;
-  background-color:rgb(70, 81, 243);
+  background-color: lightsteelblue;
   color: white;
   border-radius: 0.5rem;
   height: 30px;
@@ -126,7 +126,7 @@ input[type=text]:focus {
 }
 
 @media(max-width: 450px) {
-  .app-container{
+  .header{
     width: 100%;
   }
 
@@ -140,21 +140,21 @@ input[type=text]:focus {
 }
 
 @media(max-width: 600px) {
-  .app-container{
+  .header{
     width: 100%;
   }
 
   .container{
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media(max-width: 900px) {
-  .app-container{
+  .header{
     width: 100%;
   }
 
   .container{
-    width: 50%;
+    width: 100%;
   }
 }
